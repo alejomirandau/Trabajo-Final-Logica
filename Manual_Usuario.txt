@@ -1,0 +1,15 @@
+Manual de Usuario
+
+Este es un instructivo rápido sobre cómo funciona el sistema para cada uno de los actores:
+
+- Cliente:
+Desde su interfaz puede intentar hacer una reserva. El sistema automáticamente va a ver si la mesa está libre. Si la mesa ya fue reservada por alguien más, le saldrá un mensaje de error. Al final de su comida, puede pedir la factura, la cual le mostrará todo detallado de su consumo y el IVA.
+
+- Mesero:
+El mesero tiene un rol activo asignando mesas. Al asignar una mesa, el sistema la bloquea. También se encarga de tomar los pedidos, lo que cambia automáticamente el estado de estos a recibido.
+
+- Cocinero:
+Cuando el cocinero recibe los pedidos en pantalla y empieza a trabajarlos, el estado pasa a "COCINANDOSE".
+
+- Sistema de pagos:
+  A la hora de procesar el pago, el sistema toma todos los platos agregados al pedido y calcula el subtotal y el total. Permite elegir un método de pago antes de acabar.

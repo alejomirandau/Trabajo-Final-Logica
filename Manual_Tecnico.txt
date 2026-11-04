@@ -1,0 +1,14 @@
+Manual Técnico - Sistema de Gestión de Restaurante
+
+1. Estructura del Proyecto:
+-Herencia: La clase "Empleado" sirve como clase padre. De ella heredan "Mesero" y "Cocinero".
+-Encapsulamiento: Todos los atributos son privados o protegidos. Solo se interactúa a través de getters y métodos.
+-Enums: Se implementaron `EstadoPedido` y `EstadoMesa` para manejar los estados sin usar Strings sueltos, lo cual previene errores.
+
+2. Base de Datos H2:
+- Se añadió la clase ConexionH2.java.
+- Para que funcione, debes añadir el archivo .jar de H2 a las librerías de tu proyecto en tu IDE (Eclipse, NetBeans o IntelliJ).
+- Incluye un método de prueba "guardarPlato()" que simula un INSERT.
+
+3. Pruebas:
+- La clase MainPruebas.java contiene el método main. Si le da Run, ejecuta todo el ciclo: desde que el cliente reserva, hasta el pedido y la generación del total en la factura.
